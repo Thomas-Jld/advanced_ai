@@ -69,5 +69,5 @@ def train(path:str,epochs: int = 3) -> None:
                         acc=f"{total_acc * 100:.2f}%",
                     )
 
-    torch.jit.save(model.state_dict, path)
+    torch.save(model.state_dict, f"{path}.pth")
 
