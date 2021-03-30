@@ -137,3 +137,6 @@ dataset
 
 # Vs config
 .vscode
+
+#Weights
+*.pth
