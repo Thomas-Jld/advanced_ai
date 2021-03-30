@@ -10,13 +10,13 @@ class superdupermodel(nn.Module):
         self.conv = nn.Sequential(
             #1, 28, 28
             nn.Conv2d(1, 8, kernel_size=5, padding=2),
-            nn.SiLU(inplace=True),
+            nn.ReLU(inplace=True),
             nn.MaxPool2d(kernel_size=2),
 
             #4, 14, 14
 
             nn.Conv2d(8, 16, kernel_size=5),
-            nn.SiLU(inplace=True),
+            nn.ReLU(inplace=True),
             nn.MaxPool2d(kernel_size=2, stride=2),
 
             #16, 7, 7
