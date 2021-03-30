@@ -24,7 +24,7 @@ def export(path: str) -> None:
         do_constant_folding=True,
         export_params=True,
         input_names=["img"],
-        output_names=["out"],
+        output_names=["preds"],
         opset_version=10,
         verbose=True,
     )

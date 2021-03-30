@@ -1,5 +1,5 @@
 PYTHON=python3
-PATH=lenet5
+OUTPUT=lenet5
 EPOCHS=3
 
 all: train_export
