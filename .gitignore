@@ -140,3 +140,5 @@ dataset
 
 #Weights
 *.pth
+*.onnx
+*.pb
