@@ -47,6 +47,7 @@ canvas.onmousemove = (e) => {
 
     if(drawing){
         let ctx = canvas.getContext('2d');
+        ctx.lineCap = "round";
         ctx.beginPath();
         ctx.moveTo(prev_pos[0], prev_pos[1]);
         ctx.lineTo(cur_pos[0], cur_pos[1]);
@@ -91,4 +92,3 @@ function eval(){
         console.log(err);
     });
 }
-
